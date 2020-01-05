@@ -1,8 +1,8 @@
 #!/bin/sh
 
 setup_git() {
-  git config --global user.email "ananyoevo@gmail.com"
-  git config --global user.name "Ananya Maiti"
+  git config --global user.email "travis@travis-ci.org"
+  git config --global user.name "Travis CI"
 }
 
 build_files_and_commit_changes() {
@@ -14,7 +14,7 @@ build_files_and_commit_changes() {
   mkdir 2019
   cp -rf ../_site/* 2019/
   git add .
-  git commit -m "Manual build #1"
+  git commit -m "Travis build: $TRAVIS_BUILD_NUMBER"
 }
 
 push_files_to_github() {

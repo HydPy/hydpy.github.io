@@ -1,0 +1,258 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Style
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+
+/* -----------------------------------------
+   Page Styles
+----------------------------------------- */
+
+.flipclock-header {
+	position: relative;
+	top: 25%;
+}
+
+.flipclock-header .flip-clock-divider .flip-clock-label {
+	font-size: 24px;
+	color: rgb(204, 204, 204);
+}
+
+.flipclock-header .flip-clock-divider.seconds .flip-clock-label { right: -114px; }
+.flipclock-header .flip-clock-divider.minutes .flip-clock-label { right: -110px; }
+.flipclock-header .flip-clock-divider.hours .flip-clock-label { right: -102px; }
+.flipclock-header .flip-clock-dot { background: rgb(160, 160, 160); }
+.flipclock-header .buttons { text-align: center; margin: 60px 0 0;}
+
+.flipclock-header.no-clock { padding: 25px 0 75px; }
+.flipclock-header.no-clock .clock { display: none; }
+.flipclock-header.no-clock .buttons { float: right;  margin: 7px 2em; }
+.flipclock-header.no-clock .buttons a { display: none; font-size: 20px; }
+.flipclock-header.no-clock .buttons a:first-child { display: inline-block; }
+.flipclock-header.no-clock h1 { position: absolute; left: .5em; top: 15px; margin: 0; font-size: 50px; }
+.flipclock-header.no-clock .version { font-size: 16px; }
+.buttons a { display: inline-block !important; margin-right: .5em; width: auto; }
+.buttons a:last-child { margin-right: 0; }
+
+    .flipclock-header .buttons { margin: 40px 0 0; text-align: center; }
+	.flipclock-header h1 { font-size: 54px; }
+	.flipclock-header .version { font-size: 18px; }
+	.flipclock-header .clock { margin: 0 auto; display: block; width: 322px; }
+	
+	.flip-clock-wrapper ul { height: 50px; line-height: 50px; }
+	.flip-clock-wrapper ul li a div.up:after { top: 24px; }
+	.flip-clock-divider { height: 50px; }
+	.flip-clock-dot { height: 6px; width: 6px; left: 7px;}
+	.flip-clock-dot.top { top: 17px; }
+	.flip-clock-dot.bottom { bottom: 8px; }
+	
+	.grand-button,
+	a.grand-button,
+	a.grand-button:hover { 
+		display: block !important;
+		width: 95%; 
+		margin: 0 2.5% 10px !important;
+	}
+	
+	.flipclock-header .flip-clock-divider .flip-clock-label { font-size: 16px; }
+	.flipclock-header .flip-clock-divider.hours .flip-clock-label { right: -66px; }
+	.flipclock-header .flip-clock-divider.minutes .flip-clock-label { right: -78px; }
+	.flipclock-header .flip-clock-divider.seconds .flip-clock-label { right: -78px; }
+	
+	.flip-clock-wrapper ul { width: 37px; padding: 0; }
+	.flip-clock-wrapper ul li a div div.inn { font-size: 30px; }
+
+.grand-button, a.grand-button, a.grand-button:hover { 
+	font-size: 24px; 
+	color: white; 
+	background: rgb(203, 13, 112);
+	padding: 0.45em 0.5em;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 2px 2px 0 rgb(154, 30, 63);
+	text-shadow: 0 -1px 0 rgb(154, 30, 63);
+	cursor: pointer; width: 100%;
+}
+
+.grand-button:active { box-shadow: none; position: relative; top: 1px; }
+
+.flat.button { background: rgb(203, 13, 112); border: none; box-shadow: none; border-radius: 5px; padding: .8em; }
+.flat.round.button { border-radius: 1000px; -moz-border-radius: 1000px; -webkit-border-radius: 1000px; padding: 10px 12px; }
+
+
+.sidebar { margin-top: 20px; }
+ul.plain, .sidebar li { list-style: none; }
+.sidebar li a {
+	color: black;
+	display: block;
+	padding: 8px 0;
+	border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.sidebar li:last-child a { border-bottom: none; }
+.sidebar li a:after {
+	content: "\f054";
+	float: right;
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	color: black;
+}
+
+.sidebar .active a, .sidebar .active a:after { color: rgb(203, 13, 112); }
+
+ul.plain li { margin-bottom: 10px; }
+
+@media screen and (min-width: 767px) {
+
+	.sidebar.fixed { 
+		position: fixed;
+		top: 0;
+	}
+	
+	a.grand-button,
+	a.grand-button:hover { width: auto; display: inline-block !important; }
+	
+}
+
+dl dt { font-size: 18px; font-weight: bold; margin-bottom: .5em; }
+dl dd { margin-bottom: 1em; line-height: 1.5em; }
+dl dd b { font-weight: normal; font-family: monospace; }
+
+
+.page { margin: 1em 0; }
+
+
+.footer-copy { text-align: center; padding: 1em 0; }
+
+.version { display: block; color: rgb(168, 168, 168); font-size: 30px; font-style: italic; font-family: 'Ubuntu', sans-serif; text-shadow: none; }
+
+.flip-clock-wrapper.clock-example { margin: 40px 0 20px 0;}
+
+.clock-example .flip-clock-label { font-size: 16px; }
+.clock-example .flip-clock-meridium a,
+.clock-example .flip-clock-meridium a:hover { font-size: 24px; color: rgb(74, 73, 74); position: absolute; top: 10px; }
+
+
+
+
+
+
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code { background: none; }
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: white;
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 0 1em 1em 1em;
+	margin: .5em 0;
+	overflow: auto;	
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: rgb(23, 23, 23);
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: rgb(199, 203, 255);
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string {
+	color: rgb(127, 208, 255);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: rgb(114, 255, 197);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: rgb(203, 13, 112);
+}
+
+
+.token.regex,
+.token.important {
+	color: #e90;
+}
+
+.token.important {
+	font-weight: bold;
+}
+
+.token.entity {
+	cursor: help;
+}
